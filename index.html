@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We Love Cats</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://use.fontawesome.com/fe459689b4.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Love or Nah?</h1>
+    
+    <!-- Navigation Bar -->
+     <nav class="navbar">
+      <div id= "play" class="cont">
+        <button  class="navbtn" type="button" onclick="window.location.href='/index.html';">
+            <div class="heart">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 310 350"
+              >
+              <defs>
+                <style type="text/css"> 
+              .outline { stroke:none; stroke-width:0 }
+                </style>
+                 <g id="heart">
+                 <path 
+                  d="M0 200 v-200 h200 
+                  a100,100 90 0,1 0,200
+                  a100,100 90 0,1 -200,0
+                  z" />
+                </g>
+               </defs>
+                <use xlink:href="#heart" class="outline " fill="red" />
+              </svg>
+            </div>
+            <div class="line"></div>
+            <div class="text">
+              <p>P</p>
+              <p>L</p>
+              <p>A</p>
+              <p>Y</p>
+              <p>!</p>
+            </div>
+          </a>
+        </button>
+      </div>
+      <div id= "score" class="cont">
+        <button  class="navbtn" onclick="window.location.href='/score.html';" type="button">
+            <div class="heart">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 310 350"
+              >
+              <defs>
+                <style type="text/css"> 
+              .outline { stroke:none; stroke-width:0 }
+                </style>
+                 <g id="heart">
+                 <path 
+                  d="M0 200 v-200 h200 
+                  a100,100 90 0,1 0,200
+                  a100,100 90 0,1 -200,0
+                  z" />
+                </g>
+               </defs>
+                <use xlink:href="#heart" class="outline "/>
+              </svg>
+            </div>
+            <div class="line"></div>
+            <div class="text">
+              <p>S</p>
+              <p>C</p>
+              <p>O</p>
+              <p>R</p>
+              <p>E</p>
+            </div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Navigation End -->
+
+    <h2>Vote for your favourite kitties</h2>
+    <div id="catsImage"></div>
+
+    <!-- Choice buttons -->
+    <div class="buttons">
+      <button class="lbtn" id="lovebtn"> Love
+        <i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i>
+        <p id="lcounter">1</p>
+      </button>
+      <button class="nbtn" id="nahbtn"> Nah
+        <i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i>
+        <p id="ncounter">1</p>
+      </button>
+    </div>
+    <!-- Choices End -->
+    <script src="app.js" defer></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
+</html>

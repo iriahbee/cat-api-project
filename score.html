@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We Love Cats</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>See the Scores</h1>
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div id= "play" class="cont">
+      <button  class="navbtn" type="button" onclick="window.location.href='/index.html';">
+          <div class="heart">
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 310 350"
+            >
+            <defs>
+              <style type="text/css"> 
+            .outline { stroke:none; stroke-width:0 }
+              </style>
+               <g id="heart">
+               <path 
+                d="M0 200 v-200 h200 
+                a100,100 90 0,1 0,200
+                a100,100 90 0,1 -200,0
+                z" />
+              </g>
+             </defs>
+              <use xlink:href="#heart" class="outline " fill="red" />
+            </svg>
+          </div>
+          <div class="line"></div>
+          <div class="text">
+            <p>P</p>
+            <p>L</p>
+            <p>A</p>
+            <p>Y</p>
+            <p>!</p>
+          </div>
+        </a>
+      </button>
+    </div>
+    <div id= "score" class="cont">
+      <button  class="navbtn" onclick="window.location.href='/score.html';" type="button">
+          <div class="heart">
+            <svg
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 310 350"
+            >
+            <defs>
+              <style type="text/css"> 
+            .outline { stroke:none; stroke-width:0 }
+              </style>
+               <g id="heart">
+               <path 
+                d="M0 200 v-200 h200 
+                a100,100 90 0,1 0,200
+                a100,100 90 0,1 -200,0
+                z" />
+              </g>
+             </defs>
+              <use xlink:href="#heart" class="outline "/>
+            </svg>
+          </div>
+          <div class="line"></div>
+          <div class="text">
+            <p>S</p>
+            <p>C</p>
+            <p>O</p>
+            <p>R</p>
+            <p>E</p>
+          </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Navigation End -->
+
+    <ul>
+        <li>
+            <p class="up">Loves</p>
+            <p class="down">Nahs</p>
+        </li>
+    </ul>
+    <script src="app.js" defer></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
+</html>
